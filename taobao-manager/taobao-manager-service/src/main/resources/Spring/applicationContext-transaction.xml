@@ -34,4 +34,5 @@
     <aop:config>
         <aop:advisor advice-ref="txAdvice" pointcut="execution(* com.taotao.service.*.*(..))"/>
     </aop:config>
+    <import resource="classpath:Spring/applicationContext-dao.xml"/>
 </beans>

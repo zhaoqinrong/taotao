@@ -42,4 +42,17 @@
 				<artifactId>druid</artifactId>
 			</dependency>
 	</dependencies>
+    <!--解决xml文件不加载-->
+    <build>
+        <resources>
+            <resource>
+                <directory>src/main/java</directory>
+                <includes>
+                    <include>**/*.properties</include>
+                    <include>**/*.xml</include>
+                </includes>
+                <filtering>false</filtering>
+            </resource>
+        </resources>
+    </build>
 </project>

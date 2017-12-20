@@ -7,6 +7,12 @@
         <dependent-module archiveName="taobao-common-0.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/taobao-common/taobao-common">
             <dependency-type>uses</dependency-type>
         </dependent-module>
+        <dependent-module archiveName="taobao-manager-interface-0.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/taobao-manager-interface/taobao-manager-interface">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="taobao-manager-pojo-0.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/taobao-manager-pojo/taobao-manager-pojo">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
         <property name="context-root" value="taobao-manager-web"/>
         <property name="java-output-path" value="/taobao-manager-web/target/classes"/>
     </wb-module>

@@ -8,4 +8,12 @@
 		<welcome-file>index.html</welcome-file>
 		<welcome-file>index.jsp</welcome-file>
 	</welcome-file-list>
+    <!--初始化Spring容器 父容器-->
+    <context-param>
+        <param-name>contextConfigLocation</param-name>
+        <param-value>classpath:Spring/applicationContext-*.xml</param-value>
+    </context-param>
+    <listener>
+        <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+    </listener>
 </web-app>
